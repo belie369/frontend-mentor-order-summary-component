@@ -16,5 +16,110 @@ html {
 body {
 	font-family: 'Red Hat Display', sans-serif;
 	font-size: 1.6rem;
-	background-color: $pale-blue;
+	background: url('../images/pattern-background-mobile.svg'), $pale-blue;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+a {
+	color: $bright-blue;
+	text-decoration: underline;
+	font-size: 1.4rem;
+	font-weight: 900;
+	transition: color 0.3s ease-in;
+
+	&:hover {
+		color: $dark-blue;
+	}
+
+	&:visited {
+		color: $bright-blue;
+	}
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.order {
+	min-height: 568px;
+	max-width: 327px;
+	background-color: #fff;
+	box-shadow: 0 8px 50px -35px #000;
+	border-radius: 1em;
+
+	&__img {
+		background-image: url('../images/illustration-hero.svg');
+		background-position: center;
+		background-size: cover;
+		height: 160px;
+		width: 327px;
+		border-top-left-radius: 1em;
+		border-top-right-radius: 1em;
+		overflow: hidden;
+	}
+
+	&__title {
+		margin-top: 1.9em;
+		margin-bottom: 1.4em;
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 900;
+		color: $dark-blue;
+	}
+
+	&__text {
+		margin: 0 2.5em;
+		margin-bottom: 1.8em;
+		text-align: center;
+		color: $desaturated-blue;
+		font-size: 1.5rem;
+		line-height: 1.7em;
+	}
+
+	&__plan {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 1em 0.6em;
+		padding: 0.8em;
+		background-color: $very-pale-blue;
+		border-radius: 1em;
+	}
+
+	&__plan-img {
+		display: block;
+	}
+
+	&__plan-details {
+		margin-left: 1em;
+
+		&--annual {
+			font-weight: 700;
+		}
+
+		&--cost {
+			color: $desaturated-blue;
+			font-size: 1.4rem;
+		}
+	}
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	padding: 1.4em 1em;
+	height: 25px;
+
+	&__attribution {
+		color: $dark-blue;
+		font-size: 1.1rem;
+
+		a {
+			font-size: 1.2rem;
+		}
+	}
 }
