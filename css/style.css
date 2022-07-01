@@ -92,18 +92,35 @@ a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1em 0.6em;
-  padding: 0.8em;
+  margin: 1.5em;
+  padding: 1.1em 1em;
   background-color: hsl(225deg, 100%, 98%);
   border-radius: 1em;
+}
+.order__plan-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.1em;
 }
 .order__plan-img {
   display: block;
 }
 .order__plan-details {
-  margin-left: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .order__plan-details--annual {
+  display: block;
+  font-size: 0.9em;
   font-weight: 700;
 }
 .order__plan-details--cost {
