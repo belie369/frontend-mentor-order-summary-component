@@ -29,7 +29,7 @@ a {
 	transition: color 0.3s ease-in;
 
 	&:hover {
-		color: $dark-blue;
+		color: $desaturated-blue;
 	}
 
 	&:visited {
@@ -42,6 +42,9 @@ a {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+}
+.content {
+	margin: 0 1.5em;
 }
 
 .order {
@@ -72,8 +75,7 @@ a {
 	}
 
 	&__text {
-		margin: 0 2.5em;
-		margin-bottom: 1.8em;
+		margin: 0 1em 1.8em;
 		text-align: center;
 		color: $desaturated-blue;
 		font-size: 1.5rem;
@@ -84,7 +86,7 @@ a {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: 1.5em;
+		margin-bottom: 1.6em;
 		padding: 1.1em 1em;
 		background-color: $very-pale-blue;
 		border-radius: 1em;
@@ -115,9 +117,48 @@ a {
 			font-size: 1.4rem;
 		}
 	}
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__btn-payment,
+	&__btn-cancel {
+		all: unset;
+		width: 100%;
+		padding: 1.2em 0;
+		text-align: center;
+		font-size: 1.4rem;
+		font-weight: 700;
+		cursor: pointer;
+		transition: background-color 0.3s ease-in, color 0.2s ease-in;
+	}
+
+	&__btn-payment {
+		margin-bottom: 1em;
+		color: #fff;
+		background-color: $bright-blue;
+		box-shadow: 0 10px 15px 1px $bright-blue-alpha;
+		border-radius: 1em;
+
+		&:hover {
+			background-color: $desaturated-blue;
+		}
+	}
+
+	&__btn-cancel {
+		margin-bottom: 1.1em;
+		width: 50%;
+		color: $desaturated-blue;
+
+		&:hover {
+			color: #000;
+		}
+	}
 }
-
-
 
 .footer {
 	position: fixed;
