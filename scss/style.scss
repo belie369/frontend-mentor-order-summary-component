@@ -135,6 +135,11 @@ a {
 		font-size: 1.4rem;
 		cursor: pointer;
 		transition: background-color 0.3s ease-in, color 0.2s ease-in;
+
+		&:focus {
+			outline: none;
+			border-radius: 8px;
+		}
 	}
 
 	&__btn-payment {
@@ -148,6 +153,10 @@ a {
 		&:hover {
 			background-color: $desaturated-blue;
 		}
+
+		&:focus {
+			border: 1px solid $very-pale-blue;
+		}
 	}
 
 	&__btn-cancel {
@@ -158,6 +167,10 @@ a {
 
 		&:hover {
 			color: #000;
+		}
+
+		&:focus {
+			border: 1px solid $desaturated-blue;
 		}
 	}
 }
