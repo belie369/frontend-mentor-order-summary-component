@@ -49,9 +49,10 @@ a {
 
 .order {
 	min-height: 568px;
+	max-height: 568px;
 	max-width: 327px;
 	background-color: #fff;
-	box-shadow: 0 8px 50px -35px #000;
+	box-shadow: 0 8px 50px -35px $bright-blue;
 	border-radius: 1em;
 
 	&__img {
@@ -66,16 +67,16 @@ a {
 	}
 
 	&__title {
-		margin-top: 1.9em;
-		margin-bottom: 1.4em;
+		margin-top: 1.8em;
+		margin-bottom: 0.9em;
 		text-align: center;
-		font-size: 2rem;
+		font-size: 2.1rem;
 		font-weight: 900;
 		color: $dark-blue;
 	}
 
 	&__text {
-		margin: 0 1em 1.8em;
+		margin: 0 1em 1.4em;
 		text-align: center;
 		color: $desaturated-blue;
 		font-size: 1.5rem;
@@ -86,7 +87,7 @@ a {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 1.6em;
+		margin-bottom: 1.3em;
 		padding: 1.1em 1em;
 		background-color: $very-pale-blue;
 		border-radius: 1em;
@@ -132,14 +133,14 @@ a {
 		padding: 1.2em 0;
 		text-align: center;
 		font-size: 1.4rem;
-		font-weight: 700;
 		cursor: pointer;
 		transition: background-color 0.3s ease-in, color 0.2s ease-in;
 	}
 
 	&__btn-payment {
-		margin-bottom: 1em;
+		margin-bottom: 0.5em;
 		color: #fff;
+		font-weight: 700;
 		background-color: $bright-blue;
 		box-shadow: 0 10px 15px 1px $bright-blue-alpha;
 		border-radius: 1em;
@@ -150,9 +151,10 @@ a {
 	}
 
 	&__btn-cancel {
-		margin-bottom: 1.1em;
+		margin-bottom: 1.3em;
 		width: 50%;
 		color: $desaturated-blue;
+		font-weight: 900;
 
 		&:hover {
 			color: #000;
