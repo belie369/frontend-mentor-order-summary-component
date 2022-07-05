@@ -1,0 +1,18 @@
+@media (min-width: 992px) {
+	body {
+		background: url('../images/pattern-background-mobile.svg'), $pale-blue;
+		background-repeat: no-repeat;
+		background-size: 100% 50%;
+	}
+
+	.order {
+		min-height: 697px;
+		max-height: 697px;
+		max-width: 450px;
+
+		&__img {
+			height: 220px;
+			width: auto;
+		}
+	}
+}

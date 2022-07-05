@@ -48,10 +48,6 @@ a:visited {
   height: 100vh;
 }
 
-.content {
-  margin: 0 1.5em;
-}
-
 .order {
   min-height: 568px;
   max-height: 568px;
@@ -66,10 +62,13 @@ a:visited {
   background-position: center;
   background-size: cover;
   height: 160px;
-  width: 327px;
+  width: auto;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   overflow: hidden;
+}
+.order__content {
+  margin: 0 1.5em;
 }
 .order__title {
   margin-top: 1.8em;
@@ -200,4 +199,22 @@ a:visited {
 }
 .footer__attribution a {
   font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  body {
+    background: url("../images/pattern-background-mobile.svg"), hsl(225deg, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+  }
+
+  .order {
+    min-height: 697px;
+    max-height: 697px;
+    max-width: 450px;
+  }
+  .order__img {
+    height: 220px;
+    width: auto;
+  }
 }/*# sourceMappingURL=style.css.map */

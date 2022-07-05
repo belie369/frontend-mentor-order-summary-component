@@ -43,9 +43,6 @@ a {
 	align-items: center;
 	height: 100vh;
 }
-.content {
-	margin: 0 1.5em;
-}
 
 .order {
 	min-height: 568px;
@@ -60,10 +57,14 @@ a {
 		background-position: center;
 		background-size: cover;
 		height: 160px;
-		width: 327px;
+		width: auto;
 		border-top-left-radius: 1em;
 		border-top-right-radius: 1em;
 		overflow: hidden;
+	}
+
+	&__content {
+		margin: 0 1.5em;
 	}
 
 	&__title {
@@ -190,3 +191,5 @@ a {
 		}
 	}
 }
+
+@import './large';
