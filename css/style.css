@@ -123,8 +123,8 @@ a:visited {
 }
 .order__plan-details--annual {
   display: block;
-  font-size: 0.9em;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 .order__plan-details--cost {
   color: hsl(224deg, 23%, 55%);
@@ -216,5 +216,33 @@ a:visited {
   .order__img {
     height: 220px;
     width: auto;
+  }
+  .order__content {
+    margin: 0 3em;
+  }
+  .order__title {
+    margin-top: 1.6em;
+    margin-bottom: 0.6em;
+    font-size: 2.8rem;
+  }
+  .order__text {
+    margin: 0 1em 1.3em;
+    font-size: 1.6rem;
+    line-height: 1.6em;
+  }
+  .order__plan {
+    margin-bottom: 2em;
+    padding: 1.55em 1em 1.5em;
+  }
+  .order__plan-details--annual {
+    margin-bottom: 0.5em;
+    font-size: 1.6rem;
+  }
+  .order__plan-details--cost {
+    font-size: 1.6rem;
+  }
+  .order__btn-payment {
+    padding: 1.15em 0;
+    margin-bottom: 1.15em;
   }
 }/*# sourceMappingURL=style.css.map */
